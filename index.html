@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>俄羅斯方塊遊戲</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="game-wrapper">
+      <div id="game-board" class="game-board"></div>
+      <div class="game-info">
+        <div class="info-section">
+          <h3>分數</h3>
+          <div id="score" class="info-value">0</div>
+        </div>
+        <div class="info-section">
+          <h3>等級</h3>
+          <div id="level" class="info-value">1</div>
+        </div>
+        <div class="info-section">
+          <h3>消除的行</h3>
+          <div id="lines" class="info-value">0</div>
+        </div>
+        <div id="next-piece" class="next-piece">
+          <h3>下一個</h3>
+          <div class="next-piece-grid"></div>
+        </div>
+        <button id="toggle-btn" class="btn">開始遊戲</button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/index.js"></script>
+</body>
+</html>
